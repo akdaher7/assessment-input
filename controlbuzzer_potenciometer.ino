@@ -1,8 +1,8 @@
 
 void setup(){
-  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
   pinMode(A0, INPUT);
-  pinMode(8, OUTPUT);
+  pinMode(7 OUTPUT);
   Serial.begin(9600);
 
 
@@ -16,11 +16,11 @@ void loop()
   Serial.println(var);
 
   if(var> 1000){
-    digitalWrite(8 ,HIGH);
-    noTone(2);
+    digitalWrite(7 ,HIGH);
+    noTone(3);
   }else{
-    digitalWrite(8, LOW); 
-    tone(2,y);
+    digitalWrite(7, LOW); 
+    tone(3,y);
   }
 
  
